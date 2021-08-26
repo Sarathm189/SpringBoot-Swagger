@@ -30,7 +30,7 @@ public class AddressBookResource {
 
 	}
 	
-	@PostMapping("/")
+	@PostMapping("/add")
 	public Contact addContact(@RequestBody Contact contact) {
 		contacts.put(contact.getId(), contact);
 		return contact;
